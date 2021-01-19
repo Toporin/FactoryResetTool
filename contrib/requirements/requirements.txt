@@ -1,0 +1,6 @@
+pyscard==1.9.9
+#pysatochip==0.12.1 # todo: add if not local
+
+# GUI
+PySimpleGUIQt==0.31.0
+PySide2==5.12.6 #5.14.2

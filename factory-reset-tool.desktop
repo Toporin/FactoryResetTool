@@ -1,0 +1,20 @@
+# If you want FactoryResetTool to appear in a Linux app launcher ("start menu"), install this by doing:
+# sudo desktop-file-install factory-reset-tool.desktop
+
+[Desktop Entry]
+Comment=Utility tool to reset a card to factory state
+Exec=sh -c "PATH=\"\\$HOME/.local/bin:\\$PATH\"; electrum %u"
+GenericName[en_US]=FactoryResetTool
+GenericName=FactoryResetTool
+Icon=satochip
+Name[en_US]=factory-reset-tool.desktop
+Name=FactoryResetTool
+Categories=Finance;Network;
+StartupNotify=true
+StartupWMClass=electrum
+Terminal=false
+Type=Application
+
+#[Desktop Action Testnet]
+#Exec=sh -c "PATH=\"\\$HOME/.local/bin:\\$PATH\"; electrum --testnet %u"
+#Name=Testnet mode
