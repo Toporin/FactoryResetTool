@@ -11,6 +11,4 @@ export LDFLAGS="-L${APPDIR}/usr/lib/x86_64-linux-gnu -L${APPDIR}/usr/lib"
 #debug satochip-bridge
 export PYTHONPATH="${APPDIR}/usr/lib/python3.6/site-packages:$PYTHONPATH"
 
-#exec "${APPDIR}/usr/bin/python3.6" -s "${APPDIR}/usr/bin/seedkeeper.py" "$@"
 exec "${APPDIR}/usr/bin/python3.6" -s "${APPDIR}/usr/lib/python3.6/site-packages/factory-reset-tool/factory-reset-tool.py" "$@"
-# exec "${APPDIR}/usr/bin/python3.6" -s -m "${APPDIR}/usr/lib/python3.6/site-packages/seedkeeper/seedkeeper.py" "$@" #NOK Error while finding module specification for '/tmp/.mount_seedkeUTSsdr/usr/lib/python3.6/site-packages/seedkeeper/seedkeeper.py' (ModuleNotFoundError: No module named '/tmp/')
